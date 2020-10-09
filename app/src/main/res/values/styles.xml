@@ -1,10 +1,29 @@
 <resources>
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:statusBarColor">@color/custom_white</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <style name="customTextTitle" parent="AppTheme">
+        <item name="android:textColor">@color/custom_dark</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">@dimen/dimen_34sp</item>
+    </style>
+
+    <style name="customText" parent="AppTheme">
+        <item name="android:textColor">@color/custom_dark</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="customETBox" parent="AppTheme">
+        <item name="android:layout_marginStart">@dimen/dimen_16dp</item>
+        <item name="android:layout_marginEnd">@dimen/dimen_16dp</item>
     </style>
 
 </resources>
