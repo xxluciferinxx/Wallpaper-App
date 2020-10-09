@@ -13,8 +13,6 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
-        Utils.setLoginPref(application)
-
         if (checkLoginStatus()) {
             WallpaperApp.loginPref?.writeLoginStatus(true)
             startActivity(Intent(this, HomeActivity::class.java))
